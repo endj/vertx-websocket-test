@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .chatWindow {
+            display: flex;
+            height: 200px;
+            width: 500px;
+            border: 1px solid black;
+            flex-direction: column;
+            justify-content: end;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .chatWindow>div:first-of-type {
+            overflow: scroll;
+        }
+
+        .chatInput {
+            display: flex;
+            height: 25px;
+        }
+
+        .chatInput>input {
+            width: 100%;
+        }
+
+        .chatMessage {
+        }
+        .red {
+            color: lightcoral
+        }
+        .sender {
+            background: lavenderblush;
+        }
+    </style>
+    <title>sockets</title>
+</head>
+
+<body>
+    <div id="container" class="container"></div>
+    <script src="code.js"></script>
+</body>
+
+</html>
